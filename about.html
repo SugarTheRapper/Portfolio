@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Manyelenyele Praise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            animation: backgroundAnimation 15s infinite;
+            background-color: #f8f9fa; /* Set initial background color */
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #f8f9fa; }
+            25% { background-color: #e8f5e9; }
+            50% { background-color: #ffebee; }
+            75% { background-color: #ede7f6; }
+            100% { background-color: #f8f9fa; }
+        }
+
+        nav {
+            background: rgba(44, 62, 80, 0.9);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+            text-transform: uppercase; /* Bold text transformation */
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+
+        .about-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid #2c3e50;
+        }
+
+        .profile-content h1 {
+            font-size: 3em;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            text-transform: uppercase; /* Make the heading stand out */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+        }
+
+        .profile-content p {
+            font-size: 1.2em;
+            margin-bottom: 1.5rem;
+            font-weight: 500; /* Make the text bold */
+            color: #555;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            font-weight: bolder;
+            color: #34495e;
+            margin-bottom: 1rem;
+            text-transform: uppercase; /* Heading bolder */
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 6px solid #3498db;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-card h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            font-weight: bolder; /* Make the skill names bold */
+            text-transform: uppercase; /* For extra emphasis */
+        }
+
+        .experience-timeline {
+            margin: 2rem 0;
+            padding-left: 2rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            left: -2.8rem;
+            top: 0.3rem;
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-weight: bold;
+            text-transform: uppercase; /* Emphasize footer text */
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="about-section">
+            <div class="profile-section">
+                <img src="https://scontent.fpry1-1.fna.fbcdn.net/v/t39.30808-6/431492867_1537250187118670_5613132113178033832_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=2ZcFU_IwvksQ7kNvgFwjTMv&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fpry1-1.fna&_nc_gid=Aj7j23SQUXIzKiQlYESA-nI&oh=00_AYCxkZmkuoEoK43KlmSdv28luztDt4cLw6BDBiNNcqwCIA&oe=67857950" alt="Manyelenyele Praise" class="profile-img">
+                <div class="profile-content">
+                    <h1>About Me</h1>
+                    <p><strong>Hello!</strong> I'm <strong>Manyelenyele Praise</strong>, a passionate <strong>Full-Stack Web Developer</strong> with a keen eye for design and a love for creating seamless digital experiences. With years of experience in web development, I specialize in building custom websites and web applications that help businesses thrive in the digital world.</p>
+                    <p>My approach combines <strong>technical expertise</strong> with <strong>creative problem-solving</strong> to deliver solutions that not only look great but also perform exceptionally well.</p>
+                </div>
+            </div>
+
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <p><strong>HTML, CSS, JavaScript, React, Responsive Design</strong></p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <p><strong>Node.js, PHP, Python, RESTful APIs, Database Management</strong></p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Design</h3>
+                    <p><strong>UI/UX Design, Adobe Creative Suite</strong></p>
+                </div>
+            </div>
+
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <h3>Junior Web Developer</h3>
+                    <p><strong>Assisted in development of </strong> basic web applications</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Full-Stack Developer</h3>
+                    <p><strong>Developed and maintained</strong> multiple client websites and applications</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Frontend Specialist</h3>
+                    <p><strong>Specialized in creating responsive</strong> and interactive user interfaces</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manyelenyele Praise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

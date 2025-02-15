@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Manyelenyele Praise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        body {
+            line-height: 1.6;
+            animation: backgroundAnimation 15s infinite;
+            background-color: #f8f9fa;
+        }
+    
+        @keyframes backgroundAnimation {
+            0% { background-color: #f8f9fa; }
+            25% { background-color: #e8f5e9; }
+            50% { background-color: #ffebee; }
+            75% { background-color: #ede7f6; }
+            100% { background-color: #f8f9fa; }
+        }
+    
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;  /* Increase font size for better visibility */
+            text-transform: uppercase; /* Make text uppercase */
+            transition: color 0.3s;
+        }
+    
+        nav a:hover {
+            color: #3498db;
+            text-shadow: 0 0 10px #3498db; /* Add glow effect on hover */
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+    
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+    
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 3em; /* Increase size for emphasis */
+            font-weight: bolder; /* Make heading bolder */
+            text-transform: uppercase; /* Make it stand out */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle text shadow */
+        }
+    
+        p {
+            font-size: 1.2rem;
+            font-weight: 500; /* Make the paragraph text bold */
+            color: #555;
+        }
+    
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+    
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+    
+        .contact-method {
+            margin-bottom: 2rem;
+        }
+    
+        .contact-method h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.5em; /* Increase heading size */
+            font-weight: bolder; /* Make method names bold */
+        }
+    
+        .contact-method p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+    
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    
+        .social-link {
+            background: #2c3e50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        .social-link:hover {
+            background: #3498db;
+            text-shadow: 0 0 10px #3498db; /* Add glow effect */
+        }
+    
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+    
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1rem; /* Increase font size for better readability */
+        }
+    
+        input, textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+    
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+    
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+    
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1.1rem; /* Increase button font size */
+            width: 100%;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        button:hover {
+            background: #3498db;
+        }
+    
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+    
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .container {
+                padding: 1rem;
+            }
+    
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Contact Me</h1>
+            <p>Let's discuss your next project</p>
+        </div>
+
+        <div class="contact-grid">
+            <aside class="contact-info">
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p>praisdpraise@gmail.com</p>
+                </div>
+                <div class="contact-method">
+                    <h3>Phone Call</h3>
+                    <p>+27 67 552 8482</p>
+                </div>
+                <div class="contact-method">
+                    <h3>WhatsApp</h3>
+                    <p>+27 78 574 5628</p>
+                </div>
+                <div class="contact-method">
+                    <h3>Location</h3>
+                    <p>Limpopo, Nzhelele, South Africa</p>
+                </div>
+                <div class="contact-method">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/munyarazi?mibextid=LQQJ4d" class="social-link">Facebook</a>
+                        <a href="mailto:praisdpraise@gmail.com" class="social-link">Email</a>
+                        <a href="https://wa.me/0785745628" class="social-link">WhatsApp</a>
+                    </div>
+                    
+                </div>
+            </aside>
+
+            <section class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form action="https://formspree.io/f/movvyazp" method="POST">
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">                  
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a Service</option>
+                            <option value="full-website-design">Full Website Design</option>
+                            <option value="full-website-development">Full Website Development</option>
+                            <option value="one-page-website">One-Page Website</option>
+                            <option value="e-commerce-website">E-commerce Website</option>
+                            <option value="web-application-development">Web Application Development</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="budget">Project Budget (Optional)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select Budget Range</option>
+                            <option value="small">Less than R500</option>
+                            <option value="medium">R500 - R800</option>
+                            <option value="large">R800 - R1,200</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+            
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+            
+
+
+    <footer>
+        <p>&copy; 2025 Manyelenyele Praise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

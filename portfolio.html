@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Manyelenyele Praise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        body {
+            line-height: 1.6;
+            animation: backgroundAnimation 15s infinite;
+            background-color: #f8f9fa;
+        }
+    
+        @keyframes backgroundAnimation {
+            0% { background-color: #f8f9fa; }
+            25% { background-color: #e8f5e9; }
+            50% { background-color: #ffebee; }
+            75% { background-color: #ede7f6; }
+            100% { background-color: #f8f9fa; }
+        }
+    
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;  /* Increase font size for better visibility */
+            text-transform: uppercase; /* Make text uppercase */
+            transition: color 0.3s;
+        }
+    
+        nav a:hover {
+            color: #3498db;
+            text-shadow: 0 0 10px #3498db; /* Add glow effect on hover */
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+    
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+    
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 3em; /* Increase size for emphasis */
+            font-weight: bolder; /* Make heading bolder */
+            text-transform: uppercase; /* Make it stand out */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle text shadow */
+        }
+    
+        p {
+            font-size: 1.2rem;
+            font-weight: 500; /* Make the paragraph text bold */
+            color: #555;
+        }
+    
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+    
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            position: relative;
+        }
+    
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+    
+        .portfolio-content {
+            padding: 1.5rem;
+        }
+    
+        .portfolio-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8em; /* Increase font size */
+            font-weight: bolder; /* Make project title bold */
+            text-transform: capitalize; /* Capitalize project titles */
+        }
+    
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        .project-link:hover {
+            background: #3498db;
+            text-shadow: 0 0 10px #3498db; /* Add glow effect */
+        }
+    
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+    
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .container {
+                padding: 1rem;
+            }
+    
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>My Portfolio</h1>
+            <p>A showcase of my recent web development projects</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-content">
+                    <h2>Project 1</h2>
+                    <div class="project-links">
+                        <a href="https://voluble-praline-0219bc.netlify.app/" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-content">
+                    <h2>Project 2</h2>
+                    <div class="project-links">
+                        <a href="https://idyllic-creponne-c9bedb.netlify.app/" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-content">
+                    <h2>Project 3</h2>
+                    <div class="project-links">
+                        <a href="https://jade-dasik-1b94e4.netlify.app/" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manyelenyele Praise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Manyelenyele Praise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            animation: backgroundAnimation 15s infinite;
+            background-color: #f8f9fa;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #f8f9fa; }
+            25% { background-color: #e8f5e9; }
+            50% { background-color: #ffebee; }
+            75% { background-color: #ede7f6; }
+            100% { background-color: #f8f9fa; }
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+            text-shadow: 0 0 10px #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 3em;
+            font-weight: bolder;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8em;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        .service-content p {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .service-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 1.05em;
+            font-weight: bold;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .cta-section h2 {
+            font-size: 2em;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background: #3498db;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>My Services</h1>
+            <p><strong>Comprehensive web development solutions tailored to your needs</strong></p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://th.bing.com/th/id/OIP.YeRzXXnb-G5PCA3wL_zTXgHaHQ?rs=1&pid=ImgDetMain" alt="Web Design" class="service-img">
+                <div class="service-content">
+                    <h2>Web Design</h2>
+                    <p><strong>Beautiful, responsive websites that capture your brand's essence</strong></p>
+                    <ul class="service-features">
+                        <li>Custom Design Solutions</li>
+                        <li>Mobile-First Approach</li>
+                        <li>User Experience Optimization</li>
+                        <li>Brand Integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://th.bing.com/th/id/OIP.Bk1F334jLR8SNn-snv9iLQHaEK?rs=1&pid=ImgDetMain" alt="Frontend Development" class="service-img">
+                <div class="service-content">
+                    <h2>Frontend Development</h2>
+                    <p><strong>Interactive and responsive user interfaces</strong></p>
+                    <ul class="service-features">
+                        <li>Modern JavaScript Frameworks</li>
+                        <li>Responsive Layouts</li>
+                        <li>Performance Optimization</li>
+                        <li>Cross-browser Compatibility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://thumbs.dreamstime.com/z/back-end-development-concept-software-process-website-architecture-improvement-programming-coding-profession-isolated-flat-241944346.jpg" alt="Backend Development" class="service-img">
+                <div class="service-content">
+                    <h2>Backend Development</h2>
+                    <p><strong>Robust server-side solutions and APIs</strong></p>
+                    <ul class="service-features">
+                        <li>Custom API Development</li>
+                        <li>Database Design</li>
+                        <li>Server Management</li>
+                        <li>Security Implementation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://static3.bigstockphoto.com/2/7/1/large1500/172620335.jpg" alt="E-commerce Solutions" class="service-img">
+                <div class="service-content">
+                    <h2>E-commerce Solutions</h2>
+                    <p><strong>Complete online store development</strong></p>
+                    <ul class="service-features">
+                        <li>Shopping Cart Integration</li>
+                        <li>Payment Gateway Setup</li>
+                        <li>Inventory Management</li>
+                        <li>Order Processing Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Start Your Project?</h2>
+            <p><strong>Let's discuss how I can help bring your vision to life</strong></p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manyelenyele Praise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

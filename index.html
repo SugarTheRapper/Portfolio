@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manyelenyele Praise - Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            animation: backgroundAnimation 15s infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #f8f9fa; }
+            25% { background-color: #e8f5e9; }
+            50% { background-color: #ffebee; }
+            75% { background-color: #ede7f6; }
+            100% { background-color: #f8f9fa; }
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+            text-transform: uppercase; /* Bold text transformation */
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #2c3e50;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.8em;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            color: #34495e;
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: bold; /* Added bold text */
+        }
+
+        .cta-button {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background: #3498db;
+            transform: translateY(-2px);
+        }
+
+        .introduction {
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1em;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <img src="https://scontent.fpry1-1.fna.fbcdn.net/v/t39.30808-6/431492867_1537250187118670_5613132113178033832_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=2ZcFU_IwvksQ7kNvgFwjTMv&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fpry1-1.fna&_nc_gid=Aj7j23SQUXIzKiQlYESA-nI&oh=00_AYCxkZmkuoEoK43KlmSdv28luztDt4cLw6BDBiNNcqwCIA&oe=67857950" alt="Manyelenyele Praise" class="profile-img">
+            <h1>Manyelenyele Praise</h1>
+            <p class="subtitle">Full-Stack Web Developer & Designer</p>
+            <p>Transforming ideas into <strong>powerful</strong> and <strong>innovative</strong> digital solutions</p>
+            <a href="contact.html" class="cta-button">Let’s Work Together</a>
+        </section>
+
+        <section class="introduction">
+            <h2>Welcome to My Digital Space</h2>
+            <p> I create stunning, user-friendly websites that make businesses stand out online. No website is impossible for us to create for our clients. From sleek business sites to complex e-commerce platforms, I bring your vision to life with clean design and flawless functionality.</p>
+            <a href="portfolio.html" class="cta-button">Explore My Creations</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manyelenyele Praise. <strong>All rights reserved.</strong></p>
+    </footer>
+</body>
+</html>
